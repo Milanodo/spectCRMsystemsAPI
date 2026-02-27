@@ -1,1 +1,12 @@
+name = "leads-api"
+main = "index.js"
+compatibility_date = "2024-01-01"
 
+# Enable Workers runtime
+workers_dev = true
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"                  # Moet overeenkomen met env.DB in je code
+database_name = "spectuxcrm"      # Naam van je D1 database
+database_id = "4b567501-fabe-45bf-a91a-017a1255724a"  # Te vinden via: wrangler d1 list
